@@ -7,6 +7,7 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 
 }
 :root{
@@ -234,12 +235,54 @@ ul li a:hover {
     object-fit: contain;
     object-position: center;
 }
-.heading .color h2{
-    color: fff;
+/* contact form style*/
+.heading.color h2{
+    color: #ffff;
     border-bottom: 3px solid #ffff;
     font-size: 1.8rem;
 }
+.color p{
+    color: #ffff;
+}
 #contact{
     background: var(--second-color);
-
 }
+.contact-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact-form{
+    width: 360px;
+    padding-top: 2.5rem;
+    margin: 0 auto;
+}
+.contact-form form input,
+.contact-form form textarea{
+    width: 100%;
+    font-size: 13px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    margin-bottom: 8px;
+}
+.contact-form form input::placeholder,
+.contact-form form textarea::placeholder{
+    color: var(--second-color);
+    letter-spacing 1px;
+}
+.contact-form form textarea{
+    resize: none;
+    height: 100px;
+}
+.contact-button{
+    max-width: 360px;
+    font-weight: 600;
+    background: var(--main-color);
+    color: #ffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.app{}
